@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "Earthmeta",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/earthmeta_1.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://earth-meta.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://earth-meta.github.io/sitemap.xml",
+    "mbrsiteDomain": "3dwfd7323r",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "EarthMeta™ | Home Official Site",
+        "meta_descr": "EarthMeta is a platform that allows users to create and own metaverse cities, landmarks, and assets. It uses Web3, AI, and blockchain technology to create a decentralized and exclusive virtual world.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://earthmeta.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/earthmeta-1.png\" alt=\"Earthmeta\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uqHBjoFkPB",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#edefeb",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#edefeb"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Exploring EarthMeta: The Future of Decentralized Environmental Data</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  In an age where climate change and environmental degradation are increasingly pressing issues, the need for innovative solutions to monitor and manage our planet’s resources has never been greater. <a href=\"https://earth-meta.github.io/\" class=\"text-primary\"><b>EarthMeta</b></a> is at the forefront of this movement, leveraging the power of blockchain technology to create a decentralized platform for environmental data. This blog will delve into what <a href=\"https://presale.earthmeta.ai/\" class=\"text-primary\"><b>EarthMeta</b></a> is, how it works, its key features, and its potential impact on environmental sustainability and data transparency.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is EarthMeta?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">EarthMeta is a decentralized platform designed to collect, analyze, and share environmental data using blockchain technology. By enabling individuals, organizations, and communities to contribute and access data, EarthMeta aims to create a global network of environmental information that is transparent, secure, and easily accessible. The platform focuses on various aspects of environmental monitoring, including air quality, water quality, deforestation, climate change, and biodiversity.<br><br><b>Key Objectives of EarthMeta</b><br><b>Decentralization:</b> EarthMeta aims to eliminate the centralization of environmental data, allowing users to contribute and access information without relying on a single authority.<br><b>Transparency: </b>The platform promotes transparency in environmental data collection, ensuring that all information is verifiable and trustworthy.<br><b>Collaboration:</b> EarthMeta fosters collaboration among various stakeholders, including researchers, policymakers, non-governmental organizations (NGOs), and local communities.<br><b>Incentivization:</b> By employing a token-based economy, EarthMeta incentivizes users to contribute data and participate in environmental monitoring efforts.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Technology Behind EarthMeta</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Blockchain Integration</b><br>At its core, EarthMeta utilizes blockchain technology to ensure the integrity and security of environmental data. The decentralized nature of blockchain allows for secure data storage and sharing, with all transactions recorded on a public ledger. This transparency ensures that data can be verified and audited by anyone, enhancing trust in the information provided.<br><br><b>2. Smart Contracts</b><br>EarthMeta employs smart contracts to automate various processes within the platform. These self-executing contracts enable efficient data verification, reward distribution, and compliance with environmental standards. By automating these processes, EarthMeta reduces the need for intermediaries and enhances the efficiency of data management.<br><br><b>3. Data Collection and Analysis</b><br>EarthMeta supports various methods for data collection, including IoT devices, satellite imagery, and crowd-sourced information. Users can contribute data through mobile applications or web interfaces, making it easy to share information on environmental conditions. The platform also employs advanced analytics and machine learning algorithms to process and analyze the data collected, providing valuable insights for users.<br><br><b>4. Tokenomics</b><br>EarthMeta operates on a native cryptocurrency, META, which serves as the backbone of its ecosystem. Users can earn META tokens by contributing data, participating in environmental projects, or validating information. These tokens can be used for various purposes, including accessing premium features, supporting environmental initiatives, or trading on cryptocurrency exchanges.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of EarthMeta</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Decentralized Data Marketplace</b><br>EarthMeta features a decentralized data marketplace where users can buy, sell, and trade environmental data. This marketplace allows researchers, businesses, and policymakers to access high-quality data for their projects, while contributors can monetize their data and insights.<br><br><b>2. Community Engagement</b><br>The platform encourages community engagement by allowing users to participate in environmental monitoring efforts. Local communities can contribute data about their surroundings, helping to create a comprehensive view of environmental conditions. This engagement fosters a sense of ownership and accountability among users.<br><br><b>3. Real-Time Monitoring</b><br>EarthMeta provides real-time monitoring of environmental conditions, enabling users to stay informed about changes in air quality, water quality, and other critical metrics. This feature is particularly valuable for communities affected by environmental issues, as it allows them to take proactive measures to protect their health and well-being.<br><br><b>4. Data Visualization</b><br>To enhance user experience, EarthMeta offers data visualization tools that allow users to explore and analyze environmental data easily. Interactive maps, charts, and graphs make it easy to understand complex data sets and identify trends over time.<br><br><b>5. Collaboration Tools</b><br>EarthMeta facilitates collaboration among various stakeholders by providing tools for communication and project management. Users can form partnerships, share resources, and coordinate efforts to address environmental challenges effectively.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Importance of EarthMeta in Environmental Sustainability</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Addressing Data Gaps</b><br>One of the significant challenges in environmental monitoring is the lack of comprehensive and reliable data. EarthMeta addresses this issue by enabling individuals and organizations to contribute data from diverse sources. This collaborative approach helps fill data gaps and creates a more accurate picture of environmental conditions.<br><br><b>2. Empowering Local Communities</b><br>EarthMeta empowers local communities to take an active role in environmental monitoring. By providing tools and resources for data collection, the platform encourages community members to engage with their environment and advocate for sustainable practices. This grassroots approach fosters a sense of responsibility and ownership over local ecosystems.<br><br><b>3. Enhancing Transparency</b><br>Transparency is crucial for effective environmental management. EarthMeta’s blockchain-based platform ensures that all data is verifiable and accessible to users. This transparency fosters trust among stakeholders and encourages collaboration in addressing environmental issues.<br><br><b>4. Supporting Research and Policy Development</b><br>The wealth of data available on EarthMeta can significantly benefit researchers and policymakers. By providing access to reliable and up-to-date information, the platform enables informed decision-making and supports the development of effective environmental policies.<br><br><b>5. Promoting Global Collaboration</b><br>Environmental issues are often global in nature, requiring collaboration across borders. EarthMeta’s decentralized approach facilitates international cooperation by connecting users from different regions and backgrounds. This global collaboration is essential for addressing pressing environmental challenges, such as climate change and biodiversity loss.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Use Cases of EarthMeta</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Air Quality Monitoring</b><br>EarthMeta can be utilized for real-time air quality monitoring in urban areas. By collecting data from IoT devices and community contributions, the platform can provide valuable insights into pollution levels and health risks. This information can help local authorities implement measures to improve air quality and protect public health.<br><br><b>2. Water Quality Assessment</b><br>Water quality is a critical factor in public health and environmental sustainability. EarthMeta allows users to collect and share data on water quality from various sources, including rivers, lakes, and reservoirs. This data can inform water management practices and support efforts to protect aquatic ecosystems.<br><br><b>3. Deforestation Tracking</b><br>Deforestation is a significant driver of climate change and biodiversity loss. EarthMeta can leverage satellite imagery and community contributions to monitor deforestation in real time. By providing transparent data on land use changes, the platform can support conservation efforts and hold stakeholders accountable.<br><br><b>4. Climate Change Research</b><br>Researchers studying climate change can benefit from the comprehensive data available on EarthMeta. By accessing a wide range of environmental data, researchers can analyze trends, identify patterns, and develop models to predict future climate scenarios. This information is crucial for informing policy decisions and developing effective mitigation strategies.<br><br><b>5. Disaster Response</b><br>During natural disasters, timely access to accurate environmental data is critical for effective response efforts. EarthMeta can facilitate real-time data sharing during emergencies, enabling first responders and aid organizations to assess the situation and allocate resources effectively.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Data Quality and Verification</b><br>While EarthMeta aims to enhance data transparency and accessibility, ensuring the quality and reliability of the data collected remains a challenge. The platform must implement robust verification processes to prevent the dissemination of false or misleading information.<br><br><b>2. Regulatory Compliance</b><br>EarthMeta must navigate various regulatory frameworks related to data privacy and environmental monitoring. Ensuring compliance with local and international regulations is essential for the platform’s success and credibility.<br><br><b>3. User Adoption</b><br>For EarthMeta to realize its full potential, it must attract a diverse user base, including researchers, policymakers, and local communities. Raising awareness about the platform and its benefits will be crucial for driving user adoption.<br><br><b>4. Technological Challenges</b><br>Implementing a decentralized platform requires sophisticated technology and infrastructure. EarthMeta must continually invest in research and development to enhance the platform's capabilities and ensure a seamless user experience.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of EarthMeta</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Expanding Data Sources</b><br>EarthMeta plans to expand its data sources by collaborating with various organizations, including research institutions, NGOs, and government agencies. By integrating diverse data sets, the platform can provide a more comprehensive view of environmental conditions.<br><br><b>2. Enhancing User Experience</b><br>Continual improvements to the user interface and experience will be a priority for EarthMeta. By making the platform more intuitive and user-friendly, EarthMeta can encourage greater participation and engagement.<br><br><b>3. Developing Partnerships</b><br>EarthMeta aims to establish partnerships with organizations and institutions focused on environmental sustainability. Collaborations can enhance the platform's capabilities and extend its reach to new audiences.<br><br><b>4. Leveraging AI and Machine Learning</b><br>Integrating AI and machine learning technologies can enhance EarthMeta's data analysis capabilities. These technologies can help identify patterns, predict trends, and provide valuable insights for users.<br><br><b>5. Promoting Education and Awareness</b><br>EarthMeta is committed to promoting education and awareness about environmental issues. By providing resources and organizing events, the platform can engage users and foster a community dedicated to sustainability.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">EarthMeta represents a groundbreaking approach to environmental monitoring and data management. By leveraging blockchain technology and decentralized principles, the platform empowers individuals and communities to take an active role in environmental stewardship. With its focus on transparency, collaboration, and incentivization, EarthMeta has the potential to transform the way we collect, analyze, and share environmental data.<br><br>As the challenges posed by climate change and environmental degradation continue to mount, innovative solutions like EarthMeta are essential for creating a sustainable future. By fostering collaboration among diverse stakeholders and providing access to reliable data, EarthMeta can drive meaningful change in environmental management and policy.<br><br>In a world where data is increasingly becoming a critical asset, EarthMeta stands out as a powerful tool for fostering transparency and accountability in environmental monitoring. Whether you're a researcher, policymaker, or concerned citizen, EarthMeta invites you to join its mission to create a more sustainable and equitable planet. As the platform continues to evolve, it promises to unlock new possibilities for environmental stewardship and innovation, paving the way for a healthier and more sustainable future for generations to come.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uqHBjBppFT",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
